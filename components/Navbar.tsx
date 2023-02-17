@@ -39,7 +39,7 @@ const Navbar = () => {
         },
         { broadcast: true, sign: true }
       );
-      setOutput(tx);
+      setOutput(tx as any);
       console.log(tx);
     } catch (error) {
       setOutput("Error!, please check your input");
