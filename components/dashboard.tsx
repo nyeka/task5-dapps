@@ -32,7 +32,7 @@ const Modal = ({
     form: "flex flex-col items-start justify-around max-w-5xl mt-6 sm:w-full gap-4 text-white",
     input:
       "border-2 w-[350px]  bg-inherit h-10 px-5 pr-16 rounded-lg text-sm color-[#fff] focus:border-current",
-    btn: "bg-purple-600 hover:bg-purple-800 items-end text-white font-bold py-2 px-4 rounded-lg w-[100px] mt-[24px]",
+    btn: "bg-purple-600 hover:bg-purple-800 items-end text-white font-bold py-2 px-4 rounded-lg w-[100px] mt-[24px] dosabled:opacity-50",
   };
   return (
     <div className={style.container}>
@@ -60,6 +60,7 @@ const Modal = ({
       <button
         className={style.btn}
         onClick={() => createHandler({ ...data, user: "nyeka" })}
+        disabled={loading || !data.id}
       >
         {loading ? "Loading..." : "Submit"}
       </button>
