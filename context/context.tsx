@@ -31,6 +31,7 @@ interface ICreateContext {
   createHandler: (props: IPropsCreate) => void;
   Read: (props: IRead) => void;
   setCurrent: React.Dispatch<React.SetStateAction<string>>;
+  current: string;
 }
 
 type Props = {
@@ -46,6 +47,7 @@ export const GlobalContext = createContext<ICreateContext>({
   createHandler: () => {},
   Read: () => {},
   setCurrent: () => {},
+  current: "",
 });
 
 export const CreateProvider = ({ children }: Props) => {
@@ -129,6 +131,7 @@ export const CreateProvider = ({ children }: Props) => {
         createHandler,
         Read,
         setCurrent,
+        current,
       }}
     >
       {children}

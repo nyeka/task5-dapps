@@ -15,6 +15,7 @@ interface IProps {
   data: any;
   setData: React.Dispatch<React.SetStateAction<any>>;
   read?: boolean;
+  current?: string;
 }
 
 const Modal = ({
@@ -24,6 +25,7 @@ const Modal = ({
   data,
   setData,
   read,
+  current,
 }: IProps) => {
   const style = {
     container:
@@ -37,7 +39,7 @@ const Modal = ({
   return (
     <div className={style.container}>
       <h1 className="font-bold text-gray-300 text-xl">
-        Create New Data on inery
+        {current} Data on inery
       </h1>
       <form className={style.form}>
         <input
@@ -77,7 +79,7 @@ const Modal = ({
 const Dahboard = () => {
   const [modal, setModal] = React.useState(false);
   const [readModal, setReadModal] = React.useState(false);
-  const { loading, createHandler, Read, setCurrent } =
+  const { loading, createHandler, Read, setCurrent, current } =
     useContext(GlobalContext);
   const [data, setData] = React.useState({
     id: "",
@@ -168,6 +170,7 @@ const Dahboard = () => {
           data={data}
           setData={setData}
           read={true}
+          current={current}
         />
       )}
       {readModal && (
@@ -178,6 +181,7 @@ const Dahboard = () => {
           data={data}
           setData={setData}
           read={false}
+          current={current}
         />
       )}
     </div>
