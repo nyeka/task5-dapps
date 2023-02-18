@@ -9,7 +9,7 @@
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "ineryjs": "github:inery-blockchain/ineryjs"
+    "ineryjs": "git+https://github.com/inery-blockchain/ineryjs"
   },
   "devDependencies": {
     "@types/node": "18.11.3",
