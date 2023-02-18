@@ -124,7 +124,7 @@ const Dahboard = () => {
       <div className="flex flex-col gap-[24px] items-center">
         <div>
           <h2 className="text-white font-bold text-2xl text-center mb-[20px]">
-            Inery Crud
+            Inery Crud by Tryrex
           </h2>
           <p className="text-center text-[gray] font-medium">
             Select this button to run the blockchain inery app
