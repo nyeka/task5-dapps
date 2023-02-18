@@ -6,7 +6,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "ineryjs": "github:inery-blockchain/ineryjs",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -18,6 +17,8 @@
     "autoprefixer": "^10.4.12",
     "postcss": "^8.4.18",
     "tailwindcss": "^3.2.4",
-    "typescript": "4.9.4"
+    "typescript": "4.9.4",
+    "ineryjs": "github:inery-blockchain/ineryjs",
+
   }
 }
