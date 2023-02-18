@@ -120,7 +120,7 @@ const Dahboard = () => {
   return (
     <div className={style.container}>
       <img
-        src="https://www.pcgamesn.com/wp-content/uploads/2021/07/genshin-impact-baal-boss-fight-900x506.jpg"
+        src="https://tryrex.sfo3.digitaloceanspaces.com/baal.jpg"
         className="avatar w-[125px] h-[125px] rounded-full aspect-auto object-cover"
       />
       <div className="flex flex-col gap-[24px] items-center">
