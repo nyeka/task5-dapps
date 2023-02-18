@@ -16,7 +16,7 @@ const Home: NextPage = () => {
   return (
     <div className={style.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Tryrex | Crud Inery</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={style.wrapper}>
