@@ -59,7 +59,7 @@ const Modal = ({
       </form>
       <button
         className={style.btn}
-        onClick={() => createHandler({ ...data, user: "nyeka" })}
+        onClick={() => createHandler({ ...data, user: "tryrex" })}
         disabled={loading || !data.id}
       >
         {loading ? "Loading..." : "Submit"}
